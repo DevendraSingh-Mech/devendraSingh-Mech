@@ -40,7 +40,7 @@ body {
 .hero-image img {
   width: 260px;
   border-radius: 50%;
-  border: 4px solid #64ffda;
+  border: 4px solid #74d3ed;
   max-width: 100%;
 }
 
@@ -58,7 +58,7 @@ body {
 
 
 .primary {
-  background: #64ffda;
+  background: #74d3ed;
   color: #0a192f;
 }
 
@@ -67,12 +67,12 @@ body {
 }
 
 .secondary {
-  border: 1px solid #64ffda;
+  border: 1px solid #74d3ed;
   color: #64ffda;
 }
 
 .secondary:hover {
-  background: #64ffda;
+  background: #74d3ed;
   color: #0a192f;
 }
 
