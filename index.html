@@ -321,33 +321,27 @@
 
 <script>
   // ================= CERTIFICATE MODAL =================
-function openModal(pdf) {
-  const modal = document.getElementById("certModal");
-  const iframe = document.getElementById("certFrame");
-  iframe.src = pdf;
-  modal.classList.add("show");
-}
-
-function closeModal() {
-  const modal = document.getElementById("certModal");
-  modal.classList.remove("show");
-  setTimeout(() => {
-    document.getElementById("certFrame").src = "";
-  }, 300); // wait for fade out animation
-}
-
-window.onclick = function(event) {
-  const modal = document.getElementById("certModal");
-  if (event.target === modal) {
-    closeModal();
+  function openModal(pdf) {
+    document.getElementById("certFrame").src = pdf;
+    document.getElementById("certModal").style.display = "block";
   }
-}
 
-// ================= DOWNLOAD BUTTON =================
-document.getElementById("showDownload").addEventListener("click", function() {
-  document.getElementById("hiddenDownload").click();
-});
+  function closeModal() {
+    document.getElementById("certModal").style.display = "none";
+    document.getElementById("certFrame").src = "";
+  }
 
+  window.onclick = function(event) {
+    const modal = document.getElementById("certModal");
+    if (event.target === modal) {
+      closeModal();
+    }
+  }
+
+  // ================= DOWNLOAD BUTTON =================
+  document.getElementById("showDownload").addEventListener("click", function() {
+    document.getElementById("hiddenDownload").click();
+  });
 </script>
 
 </body>
