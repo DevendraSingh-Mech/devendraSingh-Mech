@@ -7,6 +7,25 @@
   <meta name="description" content="Mechanical Design Engineer with 5+ years experience in nuclear, defence and power sectors. CAD, FEA, GD&T, Six Sigma." />
   <link rel="stylesheet" href="./style.css">
 </head>
+  <script>
+  function revealOnScroll() {
+    const reveals = document.querySelectorAll('.reveal');
+
+    reveals.forEach((element) => {
+      const windowHeight = window.innerHeight;
+      const elementTop = element.getBoundingClientRect().top;
+      const revealPoint = 100;
+
+      if (elementTop < windowHeight - revealPoint) {
+        element.classList.add('active');
+      }
+    });
+  }
+
+  window.addEventListener('scroll', revealOnScroll);
+  window.addEventListener('load', revealOnScroll);
+</script>
+
 <body>
 
 <!-- ================= HERO ================= -->
@@ -32,7 +51,7 @@
 </section>
 
 <!-- ================= ABOUT ================= -->
-<section class="about">
+<section class="about reveal">
   <h2>About Me</h2>
   <p>
     Results-driven Mechanical Design Engineer with strong hands-on experience
@@ -57,7 +76,7 @@
 </section>
 
 <!-- ================= TECHNICAL SKILLS ================= -->
-<section class="skills">
+<section class="skills reveal">
   <h2>Technical Skillset</h2>
   <div class="skill-grid">
     <span>PTC Creo</span>
@@ -74,7 +93,7 @@
 </section>
 
 <!-- ================= PROFESSIONAL EXPERIENCE ================= -->
-<section class="experience">
+<section class="experience reveal">
   <h2>Professional Experience</h2>
 
   <!-- ECIL -->
@@ -140,7 +159,7 @@
 </section>
 
 <!-- ================= EDUCATION ================= -->
-<section class="education">
+<section class="education reveal">
   <h2>Education</h2>
 
   <div class="edu-card">
@@ -178,7 +197,7 @@
 </section>
 
 <!-- ================= CERTIFICATIONS ================= -->
-<section class="certifications">
+<section class="certifications reveal">
   <h2>Certifications</h2>
 
   <div class="cert-card-pro">
@@ -274,7 +293,7 @@
 </section>
 
 <!-- ================= CONTACT ================= -->
-<section class="contact" id="contact">
+<section class="contact reveal" id="contact">
   <h2>Contact</h2>
 
   <div class="contact-card">
