@@ -164,8 +164,11 @@ body {
 }
 
 .duration {
-  background: #e6eef7;
-  color: #1f3c5c;
+  background: #1f3c5c;
+  color: #ffffff;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.9rem;
   font-weight: 600;
   align-self: center;
 }
