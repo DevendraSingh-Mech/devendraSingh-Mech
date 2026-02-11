@@ -164,7 +164,8 @@ body {
 }
 
 .duration {
-  color: #64ffda;
+  background: #e6eef7;
+  color: #1f3c5c;
   font-weight: 600;
   align-self: center;
 }
