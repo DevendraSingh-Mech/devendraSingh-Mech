@@ -46,13 +46,16 @@ body {
 
 /* BUTTONS */
 .btn {
-  text-decoration: none;
-  padding: 10px 18px;
-  border-radius: 6px;
-  margin-right: 10px;
-  display: inline-block;
-  transition: background-color 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
 }
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
 
 .primary {
   background: #64ffda;
@@ -379,5 +382,30 @@ footer {
 .reveal.active {
   opacity: 1;
   transform: translateY(0);
+}
+/* ===== PROFESSIONAL CARD HOVER ===== */
+
+.exp-card,
+.edu-card,
+.cert-card-pro,
+.contact-card {
+  transition: all 0.4s ease;
+}
+
+.exp-card:hover,
+.edu-card:hover,
+.cert-card-pro:hover,
+.contact-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.12);
+}
+
+.exp-card:hover,
+.edu-card:hover,
+.cert-card-pro:hover {
+  border: 1px solid #64ffda;
+}
+html {
+  scroll-behavior: smooth;
 }
 
