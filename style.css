@@ -27,7 +27,7 @@ body {
 }
 
 .hero-text h2 {
-  color: #64ffda;
+  color: #74d3ed;
   margin-top: 10px;
 }
 
@@ -63,7 +63,7 @@ body {
 }
 
 .primary:hover {
-  background: #52d9b8;
+  background: #749aed;
 }
 
 .secondary {
@@ -72,7 +72,7 @@ body {
 }
 
 .secondary:hover {
-  background: #74d3ed;
+  background: #749aed;
   color: #0a192f;
 }
 
