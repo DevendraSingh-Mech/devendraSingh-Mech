@@ -400,3 +400,14 @@ footer {
     margin-top: 10px;
   }
 }
+.cert-logo {
+  width: 100px;       /* display size */
+  height: auto;       /* maintain ratio */
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.cert-logo:hover {
+  transform: scale(1.1);
+}
+
