@@ -586,6 +586,30 @@
       closeModal();
     }
   }
+  function openLogoModal(src) {
+  const modal = document.createElement("div");
+  modal.className = "logo-modal";
+
+  modal.innerHTML = `
+    <div class="logo-modal-content">
+      <span class="close-logo-modal">&times;</span>
+      <img src="${src}" class="logo-modal-img">
+    </div>
+  `;
+
+  document.body.appendChild(modal);
+
+  modal.querySelector(".close-logo-modal").onclick = () => {
+    modal.remove();
+  };
+
+  modal.onclick = (e) => {
+    if (e.target === modal) {
+      modal.remove();
+    }
+  };
+}
+
 </script>
 
 </body>
