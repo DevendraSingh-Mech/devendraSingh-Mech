@@ -429,3 +429,69 @@ html {
   box-shadow: 0 15px 30px rgba(0,0,0,0.1);
   background: #e0f7fa; /* optional soft highlight */
 }
+.cert-badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cert-logo {
+  width: 90px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.cert-logo:hover {
+  transform: scale(1.08);
+}
+
+.view-btn {
+  margin-top: 8px;
+  padding: 6px 14px;
+  border: 1px solid #0f9d58;
+  background: #fff;
+  color: #0f9d58;
+  cursor: pointer;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.view-btn:hover {
+  background: #0f9d58;
+  color: #fff;
+}
+
+/* Logo Modal */
+.logo-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.logo-modal-content {
+  position: relative;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.logo-modal-img {
+  max-width: 400px;
+  max-height: 400px;
+}
+
+.close-logo-modal {
+  position: absolute;
+  top: -12px;
+  right: -12px;
+  background: red;
+  color: white;
+  font-size: 20px;
+  padding: 4px 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
